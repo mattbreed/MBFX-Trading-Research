@@ -114,15 +114,11 @@ The supporting case studies are organised around five areas:
 4. **Baseline Testing and Debugging:** How changes were assessed, unexpected outcomes investigated and testing performance improved.
 5. **Statistical Research:** How promising results were challenged through comparisons, alternative explanations and further validation.
 
-Each case study will include the problem, the investigation, supporting evidence, findings and limitations.
-
 ## My Role and the Use of AI
 
 I was responsible for defining the trading methodology, writing the original requirements, directing development, designing tests, investigating discrepancies and interpreting the research findings.
 
 AI assistance was used extensively to write and modify MQL5 and Python code and troubleshoot technical problems. It was also used to review small aspects of the research.
-
-The project was not independently hand coded in its entirety, and the use of AI for implementation and research review is acknowledged throughout the portfolio.
 
 ## Research Outcome and Limitations
 
