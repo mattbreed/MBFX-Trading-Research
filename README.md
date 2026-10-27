@@ -104,6 +104,17 @@ A separate Python charting workflow used recorded events and historical price da
 
 Together, these tools allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
 
+### Example: Visual Verification of a Trading Decision
+
+During testing, I needed to understand why the system was making particular decisions, rather than relying solely on numerical logs.
+
+I used Python to generate annotated charts showing the recorded event, proposed trading area, entry parameters and surrounding historical price movements.
+
+This allowed me to examine the system's decisions visually, compare them against the original requirements and investigate unexpected behaviour.
+
+![Python-generated GBPJPY chart showing a recorded entry-ready event](assets/screenshots/TESTER__GBPJPY__M1__M2_ENTRY_ARMED__S_GBPJPY_M1_A_sell_199.86400_1762421580__1773837316.png)
+
+*GBPJPY example: A Python generated chart showing where the system identified a potential trade, the recorded entry and risk levels, and how the price behaved afterwards. This helped me visually check the system's decisions against the original trading rules.*
 ## Explore the Investigations
 
 The supporting case studies are organised around five areas:
