@@ -120,5 +120,3 @@ Relevant source sections include:
 | Pages 23–32 | Detailed setup requirements, exceptions and entry rules |
 | Pages 36–37 | Defined edge cases and expected system responses |
 | Pages 38–45 | Audit checkpoints, structured logging requirements and proposed data fields |
-
-The specification contains revisions and some rules that changed during development. It represents an evolving set of requirements, not proof that every proposed feature was implemented.
