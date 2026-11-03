@@ -13,6 +13,28 @@ What began as a trading algorithm grew into a substantial research framework, co
 | MQL5 and Python codebase | 35,000 lines |
 | Research dataset | 900 fields |
 
+## Research Tools and Workflow
+
+```mermaid
+flowchart TB
+    A["Original 12,000-word specification"] --> B["MQL5 automated research system"]
+
+    B --> M["Five modules: liquidity, setup detection, entry validation, execution simulation and post-trade audit"]
+
+    M --> C["Event logs: JSON and NDJSON"]
+    M --> D["Historical candle CSV exports"]
+
+    C --> E["Python event processor"]
+    C --> F["Python chart generator"]
+    D --> F
+
+    E --> G["Research datasets and quality reports"]
+    F --> H["Annotated charts across multiple timeframes"]
+
+    G --> I["Analysis, investigation and retesting"]
+    H --> I
+```
+
 ## The Original Challenge
 
 My trading approach relied on interpreting price charts, identifying certain patterns and using judgement to decide whether a trade should be taken.
@@ -93,12 +115,6 @@ Later research included comparisons with ordinary or randomly selected reference
 **The research ultimately did not establish a reproducible profitable trading edge.**
 
 Although disappointing, this was an important conclusion. Positive individual backtests were not sufficient evidence when the broader testing failed to support them.
-
-## Research Tools and Workflow
-
-The system combined three main components:
-
-**MQL5 trading system → Event logs → Python processing → CSV research datasets and reports**
 
 A separate Python charting workflow used recorded events and historical price data to create annotated screenshots for visual verification.
 
