@@ -55,6 +55,21 @@ These included selecting the wrong reference level, failing to identify certain 
 | Changes in market conditions not identified correctly | Refine the rules controlling when the system changes state |
 | Limited historical lookback | Extend the data considered when validating older structures |
 
+
+### Original evidence: Module 1 investigation
+
+The following extracts are from my working specification, dated 21 May 2025. They document problems identified with the existing implementation and the changes I proposed.
+
+**Problems identified**
+
+![Documented problems with the Module 1 validator](../assets/case-studies/module1-problems.png)
+
+**Proposed improvements**
+
+![Proposed improvements to Module 1](../assets/case-studies/module1-improvements.png)
+
+![Further proposed improvements to Module 1](../assets/case-studies/module1-improvements-continued.png)
+
 This was an example of **defect investigation leading to a requirements change**. The important distinction was between what I expected the system to detect and what the existing implementation was reporting. Documenting those differences helped define the changes that needed implementing and checking. The written review establishes the identified issues and proposed corrections. The results of implementation and subsequent testing require separate evidence.
 
 ## Designing for Exceptions and Testing
