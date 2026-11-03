@@ -15,25 +15,9 @@ What began as a trading algorithm grew into a substantial research framework, co
 
 ## Research Tools and Workflow
 
-```mermaid
-flowchart TB
-    A["Original 12,000-word specification"] --> B["MQL5 automated research system"]
 
-    B --> M["Five modules: liquidity, setup detection, entry validation, execution simulation and post-trade audit"]
+<img src="assets/MQL5 Automated Research System Flowchart.png" alt="MBFX system architecture showing the MQL5 modules, Python research tools, datasets and annotated charts" width="700">
 
-    M --> C["Event logs: JSON and NDJSON"]
-    M --> D["Historical candle CSV exports"]
-
-    C --> E["Python event processor"]
-    C --> F["Python chart generator"]
-    D --> F
-
-    E --> G["Research datasets and quality reports"]
-    F --> H["Annotated charts across multiple timeframes"]
-
-    G --> I["Analysis, investigation and retesting"]
-    H --> I
-```
 
 ## The Original Challenge
 
@@ -112,21 +96,13 @@ I also used multiple AI systems to review parts of the work, challenge assumptio
 
 Later research included comparisons with ordinary or randomly selected reference levels rather than assuming that the levels identified by the system were inherently more predictive.
 
-**The research ultimately did not establish a reproducible profitable trading edge.**
+**The research ultimately did not establish a reproducible profitable trading edge.** Although disappointing, this was an important conclusion. Positive individual backtests were not sufficient evidence when the broader testing failed to support them.
 
-Although disappointing, this was an important conclusion. Positive individual backtests were not sufficient evidence when the broader testing failed to support them.
-
-A separate Python charting workflow used recorded events and historical price data to create annotated screenshots for visual verification.
-
-Together, these tools allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
+A separate Python charting workflow used recorded events and historical price data to create annotated screenshots for visual verification. Together, these tools allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
 
 ### Example: Visual Verification of a Trading Decision
 
-During testing, I needed to understand why the system was making particular decisions, rather than relying solely on numerical logs.
-
-I used Python to generate annotated charts showing the recorded event, proposed trading area, entry parameters and surrounding historical price movements.
-
-This allowed me to examine the system's decisions visually, compare them against the original requirements and investigate unexpected behaviour.
+During testing, I needed to understand why the system was making particular decisions, rather than relying solely on numerical logs. I used Python to generate annotated charts showing the recorded event, proposed trading area, entry parameters and surrounding historical price movements. The Python script used recorded events and historical price data to create the images for visual verification which allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
 
 ![Python-generated GBPJPY chart showing a recorded entry-ready event](assets/screenshots/TESTER__GBPJPY__M1__M2_ENTRY_ARMED__S_GBPJPY_M1_A_sell_199.86400_1762421580__1773837316.png)
 
