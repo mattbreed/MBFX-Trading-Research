@@ -22,6 +22,10 @@ One part of the strategy involved identifying important price levels that the ma
 | A price level has been taken out | Require an actual break of the relevant level, rather than a near miss |
 | Conditions aren't strong enough for entry | Reject the setup when required confirmations are missing |
 
+![Original annotated market analysis](original-market-analysis.png)
+
+*An annotated chart from the original specification showing how I identified repeated price reactions and relevant market levels. These visual observations helped define the rules the automated system needed to follow.*
+
 The specification also introduced different distance thresholds depending on the timeframe. For example, shorter timeframe levels used tighter limits than daily levels. These definitions gave the software measurable conditions to evaluate and provided a basis for checking whether its decisions matched the intended rules.
 
 ## Designing the System
