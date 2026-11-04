@@ -185,3 +185,16 @@ for line in f:
 
 This allowed me to collect information from the testing system without manually reviewing every line of the MetaTrader logs. The event data could then be used to build research records and produce annotated charts, helping me investigate what the system had detected and why it had made a particular decision. Importantly, visual verification did not eliminate the problems with Module 2. It gave me better evidence for investigating them and deciding what needed to be changed.
 
+## What I Learned
+
+Module 2 changed how I approached software testing and problem solving.
+
+Initially, I spent a lot of time modifying the detection logic and rerunning tests to see whether the results improved. However, without enough information about what was happening between each stage, it was difficult to identify why certain setups were being accepted or rejected. Developing the Python visual verification system made a significant difference. I could compare the intended behaviour with the recorded events and actual price movements, rather than relying on whether the code compiled or produced an output.
+
+I also learned the importance of investigating problems across the entire process. The limit-side violation was a good example: the final validation correctly rejected an invalid order, but that didn't explain why the setup had reached that stage after the entry opportunity had already passed. This taught me to look beyond the immediate error or rejection reason and investigate the earlier conditions that contributed to it.
+
+## Outcome and Limitations
+
+The main outcome was a more reliable testing and investigation process, rather than a fully resolved detection system. The Python tools allowed me to collect structured events, reconstruct setups on historical charts and investigate specific decisions in more detail. They also provided the foundation for the larger research datasets and automated reporting developed later.
+
+Module 2 remained difficult to implement consistently because different valid trading scenarios required multiple different combinations of conditions. Although the testing tools made those problems easier to identify, they did not establish that every setup was detected correctly. I learned that getting a system to run successfully isn't the same as knowing whether it's working correctly. Even when individual checks passed, I still needed to examine the wider process and test whether the results were reliable.
