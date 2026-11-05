@@ -16,7 +16,7 @@ What began as a trading algorithm grew into a substantial research framework, co
 
 ## What This Project Demonstrates
 
-The project involved requirements analysis, system design, Python-based data processing, software testing, defect investigation and independent research.
+The project involved requirements analysis, system design, data processing by Python, software testing, defect investigation and independent research.
 
 The five case studies below explain specific problems I investigated, how I approached them and the evidence behind the findings. Each is written to be understandable without a background in trading.
 
@@ -39,9 +39,7 @@ The case studies contain supporting code, datasets, historical test results and 
 
 ## The Original Challenge
 
-My trading approach relied on interpreting price charts, identifying certain patterns and using judgement to decide whether a trade should be taken.
-
-I wanted to find out whether that process could be automated and whether the strategy was genuinely effective.
+My trading approach relied on interpreting price charts, identifying certain patterns and using judgement to decide whether a trade should be taken. I wanted to find out whether that process could be automated and whether the strategy was genuinely effective.
 
 This presented two separate challenges:
 
