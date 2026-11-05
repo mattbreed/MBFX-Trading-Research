@@ -96,11 +96,9 @@ I also used multiple AI systems to review parts of the work, challenge assumptio
 
 **The research ultimately did not establish a reproducible profitable trading edge.** Although disappointing, this was an important conclusion. Positive individual backtests were not sufficient evidence when the broader testing failed to support them.
 
-A separate Python charting workflow used recorded events and historical price data to create annotated screenshots for visual verification. Together, these tools allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
+## Example: Visual Verification of a Trading Decision
 
-### Example: Visual Verification of a Trading Decision
-
-During testing, I needed to understand why the system was making particular decisions, rather than relying solely on numerical logs. I used Python to generate annotated charts showing the recorded event, proposed trading area, entry parameters and surrounding historical price movements. The Python script used recorded events and historical price data to create the images for visual verification which allowed me to investigate individual decisions, examine larger datasets and use findings to guide subsequent tests.
+During testing, I needed to understand why the system was making particular decisions rather than relying solely on numerical logs. I used Python to generate annotated charts showing the recorded event, proposed trading area, entry parameters and surrounding historical price movements. This allowed me to visually compare the system's decisions against the original trading rules and investigate cases where the behaviour appeared incorrect.
 
 ![Python-generated GBPJPY chart showing a recorded entry-ready event](assets/screenshots/TESTER__GBPJPY__M1__M2_ENTRY_ARMED__S_GBPJPY_M1_A_sell_199.86400_1762421580__1773837316.png)
 
