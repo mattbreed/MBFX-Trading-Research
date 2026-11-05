@@ -16,7 +16,7 @@ What began as a trading algorithm grew into a substantial research framework, co
 
 ## What This Project Demonstrates
 
-The project involved requirements analysis, system design, data processing by Python, software testing, defect investigation and independent research.
+The project involved requirements analysis, system design, data processing with Python, software testing, defect investigation and independent research.
 
 The five case studies below explain specific problems I investigated, how I approached them and the evidence behind the findings. Each is written to be understandable without a background in trading.
 
