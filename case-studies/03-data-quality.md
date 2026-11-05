@@ -133,8 +133,14 @@ One of the biggest lessons was that a report appearing complete didn't necessari
 
 The full research dataset is included to demonstrate the scale of the data collection and reporting system.
 
-The `merged_setups.csv` file contains hundreds of fields covering the different stages of each potential trade, from initial detection and validation through to simulated execution, outcomes and performance measurements. Not every field is populated for every record. Some information only becomes available when a potential trade reaches a particular stage, while other missing values were investigated through the data quality reports. 
+The [merged_setups.csv](../evidence/merged_setups.csv) file contains hundreds of fields covering the different stages of each potential trade, from initial detection and validation through to simulated execution, outcomes and performance measurements. Not every field is populated for every record. Some information only becomes available when a potential trade reaches a particular stage, while other missing values were investigated through the data quality reports. 
 
 The accompanying `blank_field_report.csv` shows how I monitored missing information and identified records requiring further investigation.
+
+**[View the missing-data validation report](../evidence/blank_field_report.csv)**
+
+This report was generated from the same historical test as the full research dataset. It examines field coverage across 174 progressed opportunities, identifies missing information, records affected setup identifiers and classifies fields requiring further investigation.
+
+The report distinguishes between information that may legitimately be absent and information that was expected but not recorded. Its classifications were used to guide investigation rather than treated as definitive proof of individual software defects.
 
 These files are included as evidence of the data collection and validation process.
