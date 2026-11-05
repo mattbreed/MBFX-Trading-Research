@@ -69,6 +69,18 @@ The investigation also required careful attention to how historical information 
 
 The observations were also drawn from overlapping historical periods, meaning they could not all be treated as independent events.
 
+## Supporting Research and Evidence
+
+**[12-Month Statistical Research Report](../evidence/filled_trade_feature_analysis.pdf)**
+
+This independent investigation assisted by Claude AI examined 330 simulated trades across a 12-month historical period to identify whether information available before a trade could help distinguish successful outcomes from unsuccessful ones.
+
+Claude AI conducted 241 statistical comparisons, including checks across separate historical periods and investigations into misleading relationships caused by information leakage or differences between financial instruments.
+
+I directed the research questions and used the findings to evaluate which explanations were supported by the data and which required further investigation.
+
+The analysis did not establish a reliable predictive signal within the variables tested, reinforcing the importance of comparison groups, data quality and testing findings beyond the initial sample.
+
 ### Research Conclusion
 
 The investigation did not provide convincing evidence that these automatically identified price levels offered a meaningful predictive advantage over the comparison levels. Although some groups showed small positive differences, the effects were inconsistent and insufficient to establish a reliable advantage.
