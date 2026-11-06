@@ -135,6 +135,8 @@ The full research dataset is included to demonstrate the scale of the data colle
 
 The [merged_setups.csv](../evidence/merged_setups.csv) file contains hundreds of fields covering the different stages of each potential trade, from initial detection and validation through to simulated execution, outcomes and performance measurements. Not every field is populated for every record. Some information only becomes available when a potential trade reaches a particular stage, while other missing values were investigated through the data quality reports. 
 
+The full `merged_setups.csv` dataset may be too large to preview directly on GitHub. A smaller [dataset preview](../evidence/merged_setups_preview.csv) has therefore been provided, retaining all 805 original fields with fewer records for easier inspection. The complete dataset remains available to download and examine.
+
 The accompanying `blank_field_report.csv` shows how I monitored missing information and identified records requiring further investigation.
 
 **[View the missing-data validation report](../evidence/blank_field_report.csv)**
