@@ -11,7 +11,7 @@ What began as a trading algorithm grew into a substantial research framework, co
 | Time invested | 3,000 hours over 20 months |
 | Original technical specification | 12,000 words |
 | MQL5 and Python codebase | 35,000 lines |
-| Research dataset | 900 fields |
+| Research dataset | 800+ fields |
 
 
 ## What This Project Demonstrates
