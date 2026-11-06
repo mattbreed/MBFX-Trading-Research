@@ -14,7 +14,7 @@ I needed a way to compare the original behaviour against modified versions using
 
 One of the ways I monitored development was by retaining historical test results as a reference point.
 
-In October 2025, an approximately one-month historical test produced a return of 26.96%, increasing a simulated starting balance of £10,000 to £12,695.80 across 24 recorded positions. This became an important performance reference when investigating subsequent changes to the system.
+In October 2025, an approximately one-month historical test produced a return of 26.96%, increasing a simulated starting balance of £10,000 to £12,695.80 across 26 recorded positions. This became an important performance reference when investigating subsequent changes to the system.
 
 When I adjusted detection rules, inputs or other parts of the software, I could rerun historical tests and compare the results against the original performance. If a change produced a significant decline, I knew something had affected the system's behaviour and needed investigating.
 
@@ -49,7 +49,9 @@ The original historical test produced a return of 26.96%. Following the change, 
 
 *The reports include incomplete trade outcomes, so winning and losing trade counts do not add up to the total number of trades.*
 
-The modified run recorded more trades and more losing trades, while the maximum drawdown also increased. This gave me several areas to investigate, rather than simply concluding that the change had reduced profitability. However, a reduction in historical profitability didn't automatically mean that limiting correlated positions was the wrong decision. A restriction intended to manage risk could produce lower returns during a particular month while still being beneficial over longer periods. The comparison also had limitations, including an incomplete result in the modified run. It therefore provided evidence of a performance difference requiring further investigation, rather than proof that one version was definitively better.
+The modified run recorded more trades and more losing trades, while the maximum drawdown also increased. This gave me several areas to investigate, rather than simply concluding that the change had reduced profitability. Allowing correlated positions increased the number of trades from 26 to 34, but the additional exposure did not improve performance. Historical returns fell from 26.96% to 15.09%, while drawdown increased from 9.30% to 14.73%.
+
+However, one historical comparison was not sufficient to conclude that restricting correlated positions would consistently improve performance. I needed to understand how the change affected trade selection, overlapping exposure and overall risk before drawing a broader conclusion. A restriction intended to manage risk could produce lower returns during a particular month while still being beneficial over longer periods. The comparison also had limitations, including an incomplete result in the modified run. It therefore provided evidence of a performance difference requiring further investigation, rather than proof that one version was definitively better.
 
 ## Example: Investigating Structural Detection Errors
 
