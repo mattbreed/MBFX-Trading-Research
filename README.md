@@ -2,9 +2,11 @@
 
 **System Design | Data Analysis | Testing | Research**
 
-An independent project developed over approximately 20 months to turn a manually traded financial strategy into an automated system, investigate its behaviour and test whether it demonstrated a genuine advantage.
+I started by learning how to trade the forex markets manually and developing my own trading strategy. I then wanted to see whether I could automate that strategy by building an algorithm that would follow my rules and eventually place trades for me.
 
-What began as a trading algorithm grew into a substantial research framework, combining MQL5 and Python with event logging, structured datasets, annotated charts and historical testing.
+What started as an attempt to build a trading algorithm developed into a much larger project over the next 20 months. I designed and tested the system, investigated problems with how it behaved, and analysed historical market data to understand whether my strategy actually worked.
+
+Along the way, I developed a research and testing framework using MQL5 and Python, with automated logging, structured datasets, chart visualisations and historical testing.
 
 | Project scale | Approximate figures |
 |---|---|
